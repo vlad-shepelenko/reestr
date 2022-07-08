@@ -1,0 +1,155 @@
+$backgroundColor: #F9F9FB
+$ivory: #F6F6F9
+$additionalColor: #4D4D4F
+$darkGrey: #676A71
+$blackTitle: #231F20
+$focusColor: #009CB4
+$fontManrope: "Manrope"
+
+.authorization__container
+    display: flex
+    flex-direction: column
+    font-family: $fontManrope
+    font-weight: 500
+    background-color: $backgroundColor
+    width: 1400px
+    height: 858px
+    gap: 15px
+    justify-content: center
+
+.authorization__back
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 24px
+    height: 24px
+
+.authorization__arrow_back
+    width: 20px
+    height: 16px
+
+.authorization__back_container
+    margin-left: 120px
+    display: flex
+    gap: 15px
+    font-size: 18px
+    line-height: 25px
+    color: $darkGrey
+    align-items: center
+
+.authorization__title
+    display: flex
+    font-weight: 700
+    font-size: 36px
+    line-height: 49px
+    color: $blackTitle
+    font-style: normal
+    justify-content: center
+
+.authorization__label
+    font-size: 14px
+    line-height: 19px
+    color: $darkGrey
+    margin-bottom: 5px
+
+.authorization__input
+    width: 430px
+    height: 56px
+    background-color: $ivory
+    border: none
+    border-radius: 5px
+    text-indent: 18px
+
+.authorization__input:focus
+    outline-color: #009CB4
+
+.authorization__check
+    width: 16px
+    height: 16px
+
+.authorization__remember
+    font-size: 16px
+    line-height: 22px
+
+.aurhorization__enter
+    border: none
+    width: 430px
+    height: 56px
+    background-color: $focusColor
+    border-radius: 5px
+    color: #FFFFFF
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    letter-spacing: 0.01em
+
+.forgot__password
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.01em
+    align-self: center
+
+.authorization__additional
+    font-family: $fontManrope
+    font-size: 14px
+    line-height: 19px
+    width: 430px
+    height: 59px
+    border: 1px solid #EDEDF4
+    border-radius: 5px
+    text-decoration-line: underline
+    color: $additionalColor
+    background-color: #FFFFFF
+
+.no_account
+    font-size: 16px
+    line-height: 24px
+    color: $additionalColor
+
+.create_account
+    font-size: 16px
+    line-height: 24px
+    color: $focusColor
+
+.remember
+    display: flex
+    gap: 10px
+
+.authorization__form
+    width: 430px
+    height: 342px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 20px
+
+.additional_auth
+    display: flex
+    width: 430px
+    flex-direction: column
+    gap: 20px
+
+.registration__container
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: center
+
+.authorization
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 40px
+
+.authorization__additional:hover, .authorization__input:hover
+    color: $focusColor
+    border-color: $focusColor
+
+.authorization__input:focus ~ label, label:focus
+    color: $focusColor
+
+.validate_input_success
+    border: 1px solid #00B347
+
+.validate_input_error
+    border: 1px solid #E0371F

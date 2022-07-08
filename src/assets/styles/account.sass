@@ -1,0 +1,145 @@
+$blueColor: #009CB4
+$grey: #A8AAAE
+$backgroundInput: #F6F6F9
+$ivory: #EDEDF4
+$fontManrope: "Manrope"
+
+$assetPath: "/assets/images"
+
+.account__container
+    width: 1400px
+    height: 1039px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 40px
+
+.account__menu
+    display: flex
+    flex-direction: column
+    width: 270px
+
+.menu_table
+    display: flex
+    gap: 10px
+    height: 72px
+    padding-left: 20px
+    align-items: center
+    border-width: 0px 1px 1px 1px
+    border-style: solid
+    border-color: #EDEDF4
+
+.active
+    border: 1px solid $blueColor
+    border-radius: 5px
+
+.text
+    color: $blueColor
+
+.inactive
+    color: #E0371F
+
+.menu__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 32px
+    height: 32px
+
+.cabinet__container
+    display: flex
+    gap: 130px
+    justify-content: center
+
+.account__header
+    display: flex
+    gap: 20px
+    align-items: center
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 33px
+
+.line
+    width: 770px
+    height: 1px
+    border-radius: 3px
+    background-color: $ivory
+
+.account__information
+    display: flex
+    flex-direction: column
+    gap: 36px
+
+.account__label
+    font-family: $fontManrope
+    font-weight: 500
+    font-size: 14px
+    line-height: 19px
+    color: $grey
+    margin-bottom: 5px
+
+.account__input
+    width: 370px
+    height: 56px
+    text-indent: 18px
+    border-radius: 5px
+    background-color: $backgroundInput
+    border: none
+
+.account__general
+    width: 780px
+    display: flex
+    flex-direction: column
+    gap: 20px
+    font-family: $fontManrope
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    color: #4D4D4F
+
+.account__info
+    display: flex
+    flex-direction: row
+    gap: 30px
+    flex-wrap: wrap
+
+.account__password_container
+    display: flex
+    flex-direction: column
+    gap: 20px
+    font-family: $fontManrope
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    color: #4D4D4F
+
+.passwords__container
+    display: flex
+    gap: 30px
+
+.account__save
+    display: flex
+    width: 270px
+    height: 56px
+    background-color: $blueColor
+    font-family: $fontManrope
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+    border: none
+    justify-content: center
+    align-items: center
+    border-radius: 5px
+
+.password
+    background: url(#{$assetPath}/hide.png) center right 20px no-repeat #F6F6F9
+
+.check
+    background: url(#{$assetPath}/check.png) center right 20px no-repeat #F6F6F9
+
+.account__title
+    display: flex
+    margin-left: 115px

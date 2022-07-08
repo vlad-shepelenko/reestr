@@ -1,0 +1,161 @@
+$fontManrope: "Manrope"
+$theadColor: #009CB4
+$paginationColor: #009CB4
+$whiteColor: #FFFFFF
+$lightGrey: #C6C6C6
+$darkGrey: #4D4D4F
+$black: #231F20
+
+.registries__container
+    width: 1400px
+    height: 1694px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 40px
+    align-items: center
+
+.registries__header
+    display: flex
+    height: 50px
+    justify-content: center
+    align-items: center
+    gap: 919px
+
+.registries__header_icons
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px
+
+.registries__header_div_icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+
+.registries__table_image
+    transform: rotate(-90deg)
+    height: 10px
+    width: 20px
+
+.registries__table_th
+    display: flex
+    align-items: center
+    text-align: left
+    gap: 10px
+
+h2
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 49px
+    color: $black
+
+thead
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+    color: $theadColor
+
+.registries__table
+    display: flex
+    justify-content: center
+    height: 1364px
+
+td
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+    color: $darkGrey
+    margin: 20px 0px
+
+.registries__table_contents
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 1158px
+    height: 1364px
+
+.registries__table_head
+    display: flex
+    gap: 60px
+    text-align: left
+    border-width: 1px 0px
+    border-style: solid
+    border-color: #EDEDF4
+
+.registries__table_id
+    margin-left: 34px
+    width: 154px
+
+.registries__table_name
+    margin-left: 38px
+    width: 249px
+
+.registries__table_classID
+    width: 57px
+
+.registries__table_className
+    margin-left: 15px
+    width: 173px
+
+.registries__table_date
+    margin-left: 14px
+    width: 108px
+
+.registries__table_link
+    margin-left: 15px
+    width: 77px
+
+.registries__table_title
+    width: 100%
+
+.registries__table_tbody
+    width: 100%
+
+.registries__table_line
+    display: flex
+    gap: 40px
+    word-break: break-word
+    align-items: center
+    border-width: 1px 0px
+    border-style: solid
+    border-color: #EDEDF4
+
+.registries__pagination
+    display: flex
+    justify-content: center
+
+.pagination
+    width: 530px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 40px
+    border-radius: 5px
+    border: 1px solid #EDEDF4
+
+.pagination a
+    color: black
+    padding: 8px 16px
+    text-decoration: none
+    font-size: 18px
+    line-height: 25px
+    font-weight: 500
+    font-family: $fontManrope
+    font-style: normal
+    color: $darkGrey
+
+.pagination a.active
+    background-color: $paginationColor
+    color: $whiteColor
+
+.pagination a.inactive
+    color: $lightGrey

@@ -1,0 +1,102 @@
+$ivory: #F9F9FB
+$grey: #C6C6C6
+$line: #F4F3F5
+$darkGrey: #4D4D4F
+$notificationColor: #009CB4
+$white: #FFFFFF
+
+$assetPath: "/assets/images"
+$fontManrope: "Manrope"
+
+.header__container
+    display: flex
+    justify-content: center
+    gap: 317px
+    width: 1400px
+    height: 80px
+
+.header__logo
+    display: flex
+    align-items: center
+    gap: 30px
+
+    img
+        width: 170px
+        height: 40px
+
+.header__login
+    display: flex
+    align-items: center
+    gap: 20px
+
+.header__search
+    width: 270px
+    height: 48px
+    border-style: none
+    outline: none
+    background: url(#{$assetPath}/search.png) no-repeat center left 12px $grey
+    background-size: 17px 17px
+    background-color: $ivory
+    border-radius: 5px
+    padding: 0 10px
+    text-indent: 10%
+    color: $grey
+    font-family: $fontManrope
+    font-weight: 500
+
+.header__search::placeholder
+    color: $grey
+
+.header__circle
+    height: 48px
+    width: 48px
+    border-radius: 24px
+    background-color: $ivory
+    display: flex
+    justify-content: center
+    align-items: center
+
+.header__enter
+    font-family: $fontManrope
+    font-weight: 500
+    color: $darkGrey
+    font-size: 16px
+
+.header__calendar
+    filter: invert(28%) sepia(4%) saturate(298%) hue-rotate(202deg) brightness(99%) contrast(90%)
+
+.header__notification
+    filter: invert(47%) sepia(85%) saturate(3422%) hue-rotate(158deg) brightness(92%) contrast(105%)
+
+.header__notificationcount
+    background-color: $notificationColor
+    position: absolute
+    width: 18px
+    height: 18px
+    border-radius: 9px
+    color: $white
+    font-family: $fontManrope
+    font-size: 12px
+    font-weight: 500
+    text-align: center
+    margin-top: -30px
+    margin-left: 27px
+
+.header__line
+    width: 2px
+    height: 48px
+    border-radius: 3px
+    background-color: $line
+
+.header__user
+    display: flex
+    align-items: center
+    flex-direction: row
+    gap: 10px
+
+.header__arrow
+    width: 14px
+    height: 8px
+
+.header__circle_image
+    max-width: 48px

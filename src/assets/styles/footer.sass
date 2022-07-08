@@ -1,0 +1,146 @@
+$darkGrey: #4D4D4F
+$lightGrey: #A8AAAE
+$mediumGrey: #676A71
+$black: #000000
+$lineColor: #EDEDF4
+$linkColor: #009CB4
+$copyrightColor: #C6C6C6
+$fontManrope: "Manrope"
+
+.footer__container
+    display: flex
+    width: 1400px
+    height: 478px
+    justify-content: space-around
+    flex-direction: column
+    align-items: center
+
+.footer__info
+    display: flex
+    gap: 55px
+
+.footer__logo, .footer__information, .footer__support, .footer__contacts
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.footer__logoicon
+    width: 170px
+    height: 40px
+
+.footer__logo_head
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.footer__developer_container
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+%fontTemplate
+    font-family: $fontManrope
+    font-weight: 500
+    font-size: 14px
+    font-style: normal
+
+.footer__about
+    @extend %fontTemplate
+    color: $mediumGrey
+    line-height: 21px
+
+.footer__developer
+    @extend %fontTemplate
+    color: $darkGrey
+    font-size: 16px
+    font-weight: 600
+    line-height: 22px
+
+.footer__organization
+    @extend %fontTemplate
+    margin-top: 5px
+    color: $mediumGrey
+    line-height: 19px
+
+.footer__logo
+    gap: 40px
+
+.footer__address
+    @extend %fontTemplate
+    color: $lightGrey
+    line-height: 19px
+
+.footer__caption
+    color: $black
+    font-family: $fontManrope
+    font-weight: 700
+    font-size: 18px
+    font-style: normal
+    line-height: 25px
+
+.footer__list
+    margin: 0
+    padding-left: 0
+    li
+        @extend %fontTemplate
+        list-style-type: none
+        color: $darkGrey
+        margin-bottom: 10px
+
+.foooter__support_content
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+.footer__supportContent
+    @extend %fontTemplate
+    line-height: 21px
+    color: $mediumGrey
+
+%footer__line
+    height: 1px
+    background-color: $lineColor
+    border-radius: 3px
+
+.footer__lineShort
+    @extend %footer__line
+    width: 270px
+
+.footer__lineTall
+    @extend %footer__line
+    width: 1170px
+
+.footer__content_phone
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+.footer__phone
+    @extend %fontTemplate
+    color: $darkGrey
+    line-height: 19px
+
+.footer__mail
+    @extend %fontTemplate
+    color: $darkGrey
+    line-height: 19px
+
+.footer__addressContacts
+    @extend %fontTemplate
+    color: $darkGrey
+    line-height: 19px
+
+.footer__copy_section
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+
+.footer__copyrights
+    @extend %fontTemplate
+    color: $copyrightColor
+    line-height: 19px
+a
+    @extend %fontTemplate
+    line-height: 19px
+    color: $linkColor

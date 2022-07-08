@@ -1,0 +1,88 @@
+$fontManrope: "Manrope"
+$backgroundColor: #F9F9FB
+$mediumGrey: #676A71
+$blueText: #009CB4
+$titleText: #231F20
+$lightGrey: #C6C6C6
+$white: #FFFFFF
+$assetPath: "/assets/images"
+
+.information__container
+    display: flex
+    background-color: $backgroundColor
+    justify-content: center
+    gap: 215px
+    align-items: center
+    width: 1400px
+    height: 662px
+
+h1
+    font-family: $fontManrope
+    font-weight: 700
+    font-style: normal
+    font-weight: 800
+    font-size: 48px
+    line-geight: 66px
+    color: $titleText
+
+p
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 27px
+    color: $mediumGrey
+
+.information__picture
+    width: 502px
+    height: 502px
+
+.information__reestr, .information__pravoobl
+    display: flex
+
+.information__reestr__count, .information__pravoobl__count  
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 27px
+    color: $blueText
+
+.information__search
+    width: 310px
+    height: 56px
+    border-style: none
+    outline: none
+    background: url(#{$assetPath}/search.png) no-repeat center left 12px
+    background-color: $white
+    background-size: 17px 17px
+    border-radius: 5px
+    padding-left: 10px
+    text-indent: 10%
+    color: $lightGrey
+    font-family: $fontManrope
+    font-weight: 500
+
+.header__search::placeholder
+    color: $lightGrey
+
+.information__button
+    width: 120px
+    height: 56px
+    background-color: $blueText
+    color: $white
+    border-radius: 5px
+    font-family: $fontManrope
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    border: none
+
+.information__content
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.information__searchInput
+    margin-top: 20px
