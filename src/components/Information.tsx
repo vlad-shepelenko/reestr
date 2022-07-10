@@ -22,11 +22,11 @@ const Information: React.FC = () => {
             <div>
               <div className="information__reestr">
                 <p>Включено ПО в реестр: </p>
-                <p className="information__reestr__count"> 13 438 </p>
+                <p className="information__reestr__count">&nbsp;13 438 </p>
               </div>
               <div className="information__pravoobl">
                 <p>Правообладателей: </p>
-                <p className="information__pravoobl__count"> 4 272</p>
+                <p className="information__pravoobl__count">&nbsp;4 272</p>
               </div>
             </div>
             <div className="information__searchInput">

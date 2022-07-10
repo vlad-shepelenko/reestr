@@ -1,4 +1,4 @@
-$backgroundColor: #F9F9FB
+$backgroundColor: #FFFFFF
 $ivory: #F6F6F9
 $additionalColor: #4D4D4F
 $darkGrey: #676A71
@@ -17,12 +17,17 @@ $fontManrope: "Manrope"
     gap: 15px
     justify-content: center
 
+.authorization__login, .authorization__password
+    img
+        visibility: hidden
+
 .authorization__back
     display: flex
     justify-content: center
     align-items: center
     width: 24px
     height: 24px
+    cursor: pointer
 
 .authorization__arrow_back
     width: 20px
@@ -59,6 +64,7 @@ $fontManrope: "Manrope"
     border: none
     border-radius: 5px
     text-indent: 18px
+    cursor: pointer
 
 .authorization__input:focus
     outline-color: #009CB4
@@ -66,6 +72,7 @@ $fontManrope: "Manrope"
 .authorization__check
     width: 16px
     height: 16px
+    cursor: pointer
 
 .authorization__remember
     font-size: 16px
@@ -82,6 +89,7 @@ $fontManrope: "Manrope"
     font-size: 18px
     line-height: 25px
     letter-spacing: 0.01em
+    cursor: pointer
 
 .forgot__password
     font-size: 16px
@@ -100,6 +108,7 @@ $fontManrope: "Manrope"
     text-decoration-line: underline
     color: $additionalColor
     background-color: #FFFFFF
+    cursor: pointer
 
 .no_account
     font-size: 16px
@@ -123,6 +132,11 @@ $fontManrope: "Manrope"
     align-items: flex-start
     gap: 20px
 
+.main__form
+    display: flex
+    flex-direction: column
+    gap: 40px
+
 .additional_auth
     display: flex
     width: 430px
@@ -141,6 +155,14 @@ $fontManrope: "Manrope"
     align-items: center
     gap: 40px
 
+.validate_icon
+    visibility: visible !important
+
+.validation__container
+    display: flex
+    gap: 20px
+    align-items: center
+
 .authorization__additional:hover, .authorization__input:hover
     color: $focusColor
     border-color: $focusColor
@@ -148,8 +170,8 @@ $fontManrope: "Manrope"
 .authorization__input:focus ~ label, label:focus
     color: $focusColor
 
-.validate_input_success
-    border: 1px solid #00B347
+.authorization__input_success
+    border: 1px solid #00B347 !important
 
-.validate_input_error
-    border: 1px solid #E0371F
+    img
+        visibility: visible !important

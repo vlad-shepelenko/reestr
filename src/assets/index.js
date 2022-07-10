@@ -23,6 +23,7 @@ import security from "./images/security.png";
 import sort from "./images/sort.png";
 import update from "./images/update.png";
 import user from "./images/user.png";
+import validate from "./images/validate.png";
 import works from "./images/works.png";
 
-export { account, attention, arrow, calendar, cart, check, documements, download, exit, filter, hide, information, license, logo, meta, more, notification, plus, profile, reestr, search, security, sort, update, user, works };
+export { account, attention, arrow, calendar, cart, check, documements, download, exit, filter, hide, information, license, logo, meta, more, notification, plus, profile, reestr, search, security, sort, update, user, validate, works };

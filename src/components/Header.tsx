@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const [text, setText] = useState("Вход в аккаунт");
   const [image, setImage] = useState(user);
   const navigate = useNavigate();
-  console.log(data);
+
   useEffect(() => {
     if (data !== null) {
       if (
