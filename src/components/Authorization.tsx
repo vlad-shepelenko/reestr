@@ -31,26 +31,12 @@ const Authorization: React.FC = () => {
     dispatchFunction();
   };
 
-  const handleRealTimeValidation = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.currentTarget.value;
-    e.currentTarget.id === "name" ? setName(value) : setPassword(value);
-    inputValidation("name", name, loginItem.login);
-    inputValidation("password", password, loginItem.password);
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.currentTarget.value);
   };
 
-  const inputValidation = (id: string, field: string, objectField: string) => {
-    const element = document.getElementById(id);
-    const name_icon = document.getElementById("name_icon");
-    const password_icon = document.getElementById("password_icon");
-    if (field === objectField && id === "name") {
-      element?.classList.add("authorization__input_success");
-      name_icon?.classList.add("validate_icon");
-    } else if (field === objectField && id === "paswwrod") {
-      element?.classList.add("authorization__input_success");
-      password_icon?.classList.add("validate_icon");
-    } else {
-      element?.classList.add("authorization__input_error");
-    }
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.currentTarget.value);
   };
 
   return (
@@ -78,29 +64,85 @@ const Authorization: React.FC = () => {
               <div className="authorization__login">
                 <label className="authorization__label">Имя</label>
                 <div className="validation__container">
-                  <input
-                    id="name"
-                    className="authorization__input"
-                    type="text"
-                    placeholder="Введите имя"
-                    value={name}
-                    onInput={handleRealTimeValidation}
+                  {name ? (
+                    <input
+                      id="name"
+                      className={
+                        !name || name === "admin"
+                          ? "authorization__input_success"
+                          : "authorization__input_error"
+                      }
+                      type="text"
+                      placeholder="Введите имя"
+                      value={name}
+                      onChange={handleNameChange}
+                    />
+                  ) : (
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="Введите имя"
+                      value={name}
+                      onChange={handleNameChange}
+                    />
+                  )}
+                  <img
+                    className={name === "admin" ? "validate_icon" : ""}
+                    id="name_icon"
+                    src={validate}
+                    alt="validate"
                   />
-                  <img id="name_icon" src={validate} alt="validate" />
+                </div>
+                <div
+                  id="incorrect_login"
+                  className={
+                    !name || name === "admin" ? "error_hidden" : "error_visible"
+                  }
+                >
+                  Неправильный логин
                 </div>
               </div>
               <div className="authorization__password">
                 <label className="authorization__label">Пароль</label>
                 <div className="validation__container">
-                  <input
-                    id="password"
-                    className="authorization__input"
-                    type="password"
-                    placeholder="Введите пароль"
-                    value={password}
-                    onInput={handleRealTimeValidation}
+                  {password ? (
+                    <input
+                      id="password"
+                      className={
+                        !password || password === "12345"
+                          ? "authorization__input_success"
+                          : "authorization__input_error"
+                      }
+                      type="password"
+                      placeholder="Введите пароль"
+                      value={password}
+                      onChange={handlePasswordChange}
+                    />
+                  ) : (
+                    <input
+                      id="password"
+                      type="password"
+                      placeholder="Введите пароль"
+                      value={password}
+                      onChange={handlePasswordChange}
+                    />
+                  )}
+                  <img
+                    id="password_icon"
+                    className={password === "12345" ? "validate_icon" : ""}
+                    src={validate}
+                    alt="validate"
                   />
-                  <img id="password_icon" src={validate} alt="validate" />
+                </div>
+                <div
+                  id="incorrect_password"
+                  className={
+                    !password || password === "12345"
+                      ? "error_hidden"
+                      : "error_visible"
+                  }
+                >
+                  Неправильный пароль
                 </div>
               </div>
               <div className="remember">
@@ -115,10 +157,10 @@ const Authorization: React.FC = () => {
                 type="button"
                 value="Вход"
               />
+              <a className="forgot__password" href="https://www.google.com/">
+                Забыли свой пароль?
+              </a>
             </form>
-            <a className="forgot__password" href="https://www.google.com/">
-              Забыли свой пароль?
-            </a>
           </div>
           <div className="additional_auth">
             <input

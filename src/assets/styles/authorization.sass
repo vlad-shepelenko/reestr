@@ -16,6 +16,9 @@ $fontManrope: "Manrope"
     height: 858px
     gap: 15px
     justify-content: center
+    border-width: 1px 0px
+    border-style: solid
+    border-color: #EDEDF4
 
 .authorization__login, .authorization__password
     img
@@ -57,22 +60,14 @@ $fontManrope: "Manrope"
     color: $darkGrey
     margin-bottom: 5px
 
-.authorization__input
-    width: 430px
-    height: 56px
-    background-color: $ivory
-    border: none
-    border-radius: 5px
-    text-indent: 18px
-    cursor: pointer
-
-.authorization__input:focus
+.authorization__input:focus, #name:focus, #password:focus
     outline-color: #009CB4
 
 .authorization__check
     width: 16px
     height: 16px
     cursor: pointer
+    background-color: #33A6FF
 
 .authorization__remember
     font-size: 16px
@@ -95,7 +90,7 @@ $fontManrope: "Manrope"
     font-size: 16px
     line-height: 22px
     letter-spacing: 0.01em
-    align-self: center
+    margin-left: 126px
 
 .authorization__additional
     font-family: $fontManrope
@@ -126,7 +121,6 @@ $fontManrope: "Manrope"
 
 .authorization__form
     width: 430px
-    height: 342px
     display: flex
     flex-direction: column
     align-items: flex-start
@@ -135,7 +129,7 @@ $fontManrope: "Manrope"
 .main__form
     display: flex
     flex-direction: column
-    gap: 40px
+    gap: 20px
 
 .additional_auth
     display: flex
@@ -163,11 +157,12 @@ $fontManrope: "Manrope"
     gap: 20px
     align-items: center
 
-.authorization__additional:hover, .authorization__input:hover
+.authorization__additional:hover, #name:hover, #password:hover
     color: $focusColor
     border-color: $focusColor
+    border-size: 1px
 
-.authorization__input:focus ~ label, label:focus
+#name:focus ~ label, #password:focus ~ label, label:focus
     color: $focusColor
 
 .authorization__input_success
@@ -175,3 +170,27 @@ $fontManrope: "Manrope"
 
     img
         visibility: visible !important
+
+.authorization__input_error
+    border: 1px solid #E0371F !important
+    color: #E0371F
+
+#name, #password
+    width: 430px
+    height: 56px
+    margin-top: 5px
+    background-color: $ivory
+    border: none
+    border-radius: 5px
+    text-indent: 18px
+    cursor: pointer
+
+.error_visible
+    margin-top: 5px
+    font-size: 12px
+    font-weight: 500
+    color: #E0371F
+    visibility: visible
+
+.error_hidden
+    visibility: hidden
